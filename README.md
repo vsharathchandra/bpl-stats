@@ -1,5 +1,5 @@
-# BPL-API
-Open source development for API of Barclays Premier League or English Premier League
+# bpl-stats
+Command-line tool for live scores and stats of Barclays Premier League
 
 ### Current Functionality
 - Get Data Related to Points Table
@@ -21,5 +21,3 @@ Open source development for API of Barclays Premier League or English Premier Le
   - [ ] Top assist providers
 - [x] News
 
-# bpl-stats
-Command-line tool for live scores and stats of Barclays Premier League
