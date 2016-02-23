@@ -21,7 +21,7 @@ class news:
         self.url = "http://www.premierleague.com/en-gb.html"
         
         self.res = requests.get(self.url,stream=True,proxies=proxyDict)
-        self.soup = bs4.BeautifulSoup(self.res.text)
+        self.soup = bs4.BeautifulSoup(self.res.text,'lxml')
         
         self.all_updated = False
 
@@ -77,7 +77,7 @@ class next3Fixtures:
         self.url = "http://www.premierleague.com/en-gb/matchday/league-table.html?season=2015-2016&month=DECEMBER&timelineView=date&toDate=1451433599999&tableView=NEXT_3_FIXTURES"
         
         self.res = requests.get(self.url, stream=True, proxies=proxyDict)
-        self.soup = bs4.BeautifulSoup(self.res.text)
+        self.soup = bs4.BeautifulSoup(self.res.text,'lxml')
 
         self.all_updated = False
 
@@ -131,7 +131,7 @@ class pointsTable:
         self.url = 'http://www.premierleague.com/en-gb/matchday/league-table.html'
         #res = requests.get(url)
         self.res = requests.get(self.url, stream=True, proxies=proxyDict)
-        self.soup = bs4.BeautifulSoup(self.res.text)
+        self.soup = bs4.BeautifulSoup(self.res.text,'lxml')
         
         self.all_updated = False
 
@@ -234,7 +234,7 @@ class topScorers:
         self.url = "http://www.premierleague.com/en-gb.html"
        
         self.res = requests.get(self.url, stream=True, proxies=proxyDict)
-        self.soup = bs4.BeautifulSoup(self.res.text)
+        self.soup = bs4.BeautifulSoup(self.res.text,'lxml')
         
         self.all_updated = False
 
@@ -277,7 +277,7 @@ class Fixtures:
         self.url = "http://www.premierleague.com/en-gb/matchday/matches.html?paramClubId=ALL&paramComp_8=true&view=.dateSeason"
         
         self.res = requests.get(self.url, stream=True, proxies=proxyDict)
-        self.soup = bs4.BeautifulSoup(self.res.text)
+        self.soup = bs4.BeautifulSoup(self.res.text,'lxml')
         
         self.all_updated = False
         
@@ -325,7 +325,7 @@ class Results:
         self.url = "http://www.premierleague.com/en-gb.html"
         
         self.res = requests.get(self.url, stream=True, proxies=proxyDict)
-        self.soup = bs4.BeautifulSoup(self.res.text)
+        self.soup = bs4.BeautifulSoup(self.res.text,'lxml')
         
         self.all_updated = False
         

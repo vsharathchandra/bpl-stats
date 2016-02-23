@@ -6,7 +6,7 @@ def topScorersCall():
     L = topScorers()
     M = L.top_scorers_goals()
     desired_dots = 55
-    print "Scorerers" + "Goals".rjust(50,' ')
+    print ('Scorerers' + 'Goals'.rjust(50,' '))
     for i in range(len(M[0])):
         print (M[0][i].ljust(desired_dots,' ') + M[1][i])
 def fixturesCall():
@@ -20,7 +20,7 @@ def pointsTableCall():
     L = pointsTable()
     M = L.table()
     desired_dots = 22
-    print "Team Names".ljust(desired_dots-1,' ') + "Points".ljust(desired_dots,' ') + "Played".ljust(desired_dots,' ') + "Won"
+    print ("Team Names".ljust(desired_dots-1,' ') + "Points".ljust(desired_dots,' ') + "Played".ljust(desired_dots,' ') + "Won")
     for x in range(len(M[0])):
         print (M[0][x].ljust(desired_dots,' ') + M[1][x].ljust(desired_dots,' ') + M[2][x].ljust(desired_dots,' ') + M[3][x])        
 
@@ -42,10 +42,10 @@ def Main():
                 pointsTableCall()
             break
         except:
-            print "Not able to Connect to Internet.Trying Again Attempts " + str(5-i)
+            print ("Not able to Connect to Internet.Trying Again Attempts " + str(5-i))
         i = i -1
     if i == 0:
-        print "Unable to Connect Network"
+        print ("Unable to Connect Network")
 
 if __name__ == '__main__':
     Main()
